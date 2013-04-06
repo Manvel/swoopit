@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/datepicker.css" rel="stylesheet" media="screen">
+		<link href="css/main.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATYA4B5b00dKpslZfoZQjmryLC8UnVBJA&sensor=true"></script>
+		<script type="text/javascript" src="js/Settings.js"></script>
+		<script type="text/javascript" src="js/Events.js"></script>
+		<script type="text/javascript" src="js/SMap.js"></script>
+		<script type="text/javascript" src="js/SDatepicker.js"></script>
+		<script type="text/javascript" src="js/Search.js"></script>
+		<script type="text/javascript" src="js/Upcoming.js"></script>
+		<script type="text/javascript" src="js/popup.js"></script>
+	</head>
+	<body class="popup">
+		<div id="main">
+			<div id="map" class="interface">
+				<div class='navigation'> 
+					<div class='filters'> 
+						<div class="searchRow filterItem">
+						
+						</div>
+						<div class="searchRow filterItem input-append">
+							
+							<input type="text" class='search' id='search' placeholder="search" />
+							<button class="add-on clearSearch"><i class="icon-remove-circle"></i></button>
+						</div>
+						<div class="dateRow filterItem">
+							<input type="text" class='startDate' placeholder="start date" />
+							<input type="text" class='endDate' placeholder="end date" />
+						</div>
+						<div class="filterItem">
+							<input type="button" value='clear start date' class="btn btn-mini clearStart" />
+							<input type="button" value='clear end date' class="btn btn-mini clearEnd" />
+						</div>
+						<div class="filterItem upcoming">
+							<ul class="nav nav-list">
+								<li class="nav-header" id='upcomingHead'>Upcoming events</li>
+							</ul>
+							<ul class="nav nav-list upEvents" id='upEvents'>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="map-canvas"/>
+			</div>
+		</div>
+	</body>
+</html>

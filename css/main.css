@@ -1,0 +1,170 @@
+body {
+	width: 620px;
+	background-color: #f2f5f6;
+}
+#map .navigation {
+	vertical-align: top;
+	display:inline-table;
+	width: 200px;
+}
+
+#map .filters {
+	float:left;
+	padding-top: 10px;
+}
+#map-canvas { 
+	display:inline-table;
+	height: 300px;
+	width: 400px;
+}
+.table-condensed td {
+	padding-top: 2px;
+}
+#map-canvas img {
+	max-width: none;
+}
+.startDate, .endDate {
+	width: 75px;
+}
+.filterItem {
+	padding-left: 7px;
+}
+
+.search {
+	width: 140px;
+}
+.popup .dateRow {
+	height: 30px;
+}
+.popup .clearEnd {
+	margin-left: 3px;
+	width: 87px;
+}
+.popup .clearStart {
+	width: 87px;
+}
+#map .clearSearch {
+	height:30px;
+}
+.upcoming {
+	padding-top: 10px;
+}
+.upcoming .upEvents.nav-list {
+	height: 150px;
+	overflow: auto;
+	font-size: 11px;
+}
+.upcoming .upEvents.nav-list li {
+	height:20px;
+}
+.upcoming .upEvents.nav-list li a{
+	padding-top: 0px;
+	height:18px;
+}
+
+
+.options {
+	width: 900px;
+	
+}
+
+.navigationMain {
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 10px;
+	padding-left:20px;
+	width:150px;
+	display: inline-table;
+}
+
+.navigationHeader {
+	position:relative;
+}
+
+
+#optionsContainer {
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-table;
+	width: 700px;
+}
+
+
+.extName {
+	display: inline-table;
+	font-size: 24px;
+}
+
+.extVer {
+	display:inline-table;
+	position:absolute;
+	bottom:0;
+	right:0;
+	font-size: 13px;
+	color: #878787;
+}
+
+#navigation {
+	list-style-type: none;
+	padding-top: 10px;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+#navigation li {
+	padding-left: 5px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	font-size: 13px;
+	color: #878787;
+}
+
+#navigation:hover {
+	cursor: pointer;
+}
+
+#navigation .selected {
+	background-color: #E6E6E6;
+	color: black;
+}
+
+.header {
+	padding-bottom:5px;
+	font-family: "Arial Narrow";
+	font-size: 20px;
+	width: 600;
+}
+
+#optionsContainer hr {
+	margin: 5px 0;
+	border: 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #fff;
+	border-style: inset;
+	border-top-style: inset;
+	border-width: 1px;
+	border-top-width: 1px;
+}
+
+#optionsContainer #map, #optionsContainer #settings, #optionsContainer #about {
+	padding-left: 30px;
+}
+
+.options .clearStart, .options .clearEnd {
+	height:30px;
+}
+
+.options .startDate, .options .endDate {
+	margin-left: 10px;
+}
+
+.options #map-canvas { 
+	height: 350px;
+	width: 650px;
+}
+
+.options .search {
+	width: 200px;
+}
+
+.options .settings .checkbox {
+	width: 300px;
+}

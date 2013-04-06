@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/datepicker.css" rel="stylesheet" media="screen">
+		<link href="css/main.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATYA4B5b00dKpslZfoZQjmryLC8UnVBJA&sensor=true"></script>
+		<script type="text/javascript" src="js/Settings.js"></script>
+		<script type="text/javascript" src="js/Events.js"></script>
+		<script type="text/javascript" src="js/SMap.js"></script>
+		<script type="text/javascript" src="js/SDatepicker.js"></script>
+		<script type="text/javascript" src="js/Search.js"></script>
+		<script type="text/javascript" src="js/Upcoming.js"></script>
+		<script type="text/javascript" src="js/OptView.js"></script>
+		<script type="text/javascript" src="js/options.js"></script>
+	</head>
+	<body class="options">
+		<div class="navigationMain">
+			<div class="navigationHeader">
+				<div class="extName">
+					swoopit
+				</div>
+				<div class="extVer" id="extVer">
+					v. 1.2
+				</div>
+			</div>
+			<div class="navigationLinksCont">
+				<ul id="navigation">
+					<li id="mapLnk" class="navigation selected">Map</li>
+					<li id="settingsLnk" class="navigation">Settings</li>
+					<li id="aboutLnk" class="navigation">About</li>
+				</ul>
+			</div>
+		</div>
+		<div id="optionsContainer">
+			<!-- Map -->
+			<div id="map" class="interface">
+				<div class="header">
+					Map
+				</div>
+				<hr />
+				<div class='navigation'> 
+					<div class='filters'> 
+						<div class="searchRow filterItem input-append">
+							<input type="text" class='search' id='search' placeholder="search" />
+							<button class="add-on clearSearch"><i class="icon-remove-circle"></i></button>
+							<input type="text" class='startDate' placeholder="start date" />
+							<button class="add-on clearStart"><i class="icon-remove-circle"></i></button>
+							<input type="text" class='endDate' placeholder="end date" />
+							<button class="add-on clearEnd"><i class="icon-remove-circle"></i></button>
+						</div>
+						<div class="searchRow filterItem">
+							<div id="map-canvas"/>
+							</div>
+						</div>
+						<div class="dateRow filterItem">
+							
+						</div>
+						<div class="filterItem upcoming">
+							<ul class="nav nav-list">
+								<li class="nav-header" id='upcomingHead'>Upcoming events</li>
+							</ul>
+							<ul class="nav nav-list upEvents" id='upEvents'>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Settings -->
+			<div id="settings" class="interface">
+				<div class="header">
+					Settings
+				</div>
+				<hr />
+				<div class='settings'>
+					 <div class="settingRow">
+					 	<label class="checkbox inline">
+					      <input type="checkbox" id='navigate'> Navigate to event after search
+					    </label>
+					 </div>
+					 <div class="settingRow">
+					 	<label class="checkbox inline">
+					      <input type="checkbox" id='today'> Allways filter from today
+					    </label>
+					 </div>
+					 <div class="settingRow">
+					 	<label class="checkbox inline">
+					      <input type="checkbox" id='type'> Show map type control
+					    </label>
+					 </div>
+					 <div class="settingRow">
+					 	<label class="checkbox inline">
+					      <input type="checkbox" id='street'> Show street view control
+					    </label>
+					 </div>
+					 <div class="settingRow">
+					 	<label class="checkbox inline">
+					      <input type="checkbox" id='zoom'> Show zoom control
+					    </label>
+					 </div>
+				</div>
+			</div>
+			<!-- About -->
+			<div id="about" class="interface">
+				<div class="header">
+					About
+				</div>
+				<hr />
+			</div>
+		</div>
+	</body>
+</html>

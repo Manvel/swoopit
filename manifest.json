@@ -1,0 +1,29 @@
+{
+   "name": "swoopit",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "easy access to swoop events in popup, Extension for Startup weekend challenge (#swgoogleio).",
+  "version": "0.1",
+   "icons": { "16": "img/icons/16x16.png",
+           "48": "img/icons/48x48.png",
+          "128": "img/icons/128x128.png" },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y",
+        "chromeos": "Ctrl+Shift+U",
+        "linux": "Ctrl+Shift+J"
+      }
+    }
+   },
+   "options_page": "options.html",
+   "content_security_policy": "script-src 'self' 'unsafe-eval' https://cbks0.googleapis.com https://maps.googleapis.com https://maps.gstatic.com https://mts0.googleapis.com https://mts1.googleapis.com; object-src 'self'",
+  "browser_action": {
+    "default_icon": "img/icons/128x128.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs", "https://*/", "http://*/"
+  ]
+}
