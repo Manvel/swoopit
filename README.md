@@ -14,3 +14,6 @@ Extension for Startup weekend challenge ([#swgoogleio](https://twitter.com/searc
 #update extension
 - navigate to extensions page (check installatioon section)
 - click on "Reload" button of corresponding extension
+
+#note
+- The data is old, as it was [designed](https://github.com/StartupWeekend/googleio_contest/issues/1) to be old for challenge, but if you need to test upcoming events part, dig in Upcoming.js file and update myStartdate dateobject variable.

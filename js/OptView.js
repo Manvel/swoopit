@@ -2,7 +2,6 @@ function OptView() {
 	this.current = "";
 	this.eventBinding();
 	this.showMap();
-	//this.showSettings();
 }
 
 
@@ -33,7 +32,7 @@ OptView.prototype = {
 	},
 	showAbout: function() {
 		// Show About
-		$("#settingsLnk").removeClass("selected");
+		$("#mapLnk").removeClass("selected");
 		$("#settingsLnk").removeClass("selected");
 		$("#aboutLnk").addClass("selected");
 		
